@@ -39,7 +39,7 @@ def load_data():
 
     mean_image = np.mean(x_train, axis=0)
     x_train -= mean_image
-    y_train -= mean_image
+    x_test -= mean_image
 
     data_dict = {
         'images_train': x_train,
